@@ -2,9 +2,9 @@ import React from 'react';
 import Header from '../components/header';
 import About from '../components/about';
 import Work from '../components/work';
-import Footer from '../components/footer';
 import { Helmet } from 'react-helmet';
 
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Row, Col } from 'react-bootstrap';
 import favicon from '../assets/images/nc.png'
@@ -18,6 +18,13 @@ import { css, jsx } from '@emotion/core';
   width: 100vw;
   margin-top: 4rem;
  `
+ const Projects = styled.div`
+   display: flex;
+   flex-wrap: wrap;
+   /* height: 100vh; */
+   width: 100vw;
+   margin-top: 4rem;
+ `
 
 export default () => (
   <div>
@@ -28,14 +35,11 @@ export default () => (
     <Section>
       <Header />
     </Section>
-    <Section>
+    <Projects id="projects">
       <Work />
-    </Section>
-    <Section>
+    </Projects>
+    <Section id="about">
       <About />
-    </Section>
-    <Section>
-      <Footer />
     </Section>
   </div>
 )

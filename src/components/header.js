@@ -1,10 +1,12 @@
 import React from 'react';
-import { Col, Button, Container, Navbar, Image } from 'react-bootstrap';
+import { Col, Row, Container, Navbar, Image } from 'react-bootstrap';
 import {Link} from 'gatsby';
 import './sidebar.css';
 import styled from '@emotion/styled';
 import { css, jsx } from '@emotion/core';
 import headshot from '../assets/images/head.png';
+
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Header = styled.div`
   /* background-color: gray; */
@@ -38,6 +40,12 @@ const Hero = styled.div`
 const Blurb = styled.div`
   display: inline-block;
 `
+const Button = styled.button`
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+`
 
 export default () => (
   <Header>
@@ -45,16 +53,22 @@ export default () => (
     <Bar>
       <Link><h2>Nicholas Cooney</h2></Link>
       <Nav className='nav-style'>
-        <Link>Projects</Link>
-        <Link>About</Link>
-        <Link>Contact</Link>
+        <Button onClick={() => scrollTo('#projects')}>Projects</Button>
+        <Button onClick={() => scrollTo('#about')}>About</Button>
       </Nav>
     </Bar>
     <Hero>
+    <Row>
+    <Col>
     <Headshot src={headshot}/>
+    </Col>
+    <Col>
     <Blurb>
       <h3>Junior Software Engineer, ready to step into the industry.</h3  >
     </Blurb>
+    </Col>
+
+    </Row>
     </Hero>
   </Container>
   </Header>

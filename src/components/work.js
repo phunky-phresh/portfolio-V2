@@ -4,6 +4,8 @@ import { Row, Col, CardDeck, Card, Button, Container } from 'react-bootstrap';
 
 import bf from '../assets/images/board-files-img.png';
 import ttt from '../assets/images/tic-tac-toe.png';
+import bet from '../assets/images/handshake.png';
+import mixedBiz from '../assets/images/mixedBiz.png';
 
 export default () => (
   <Container>
@@ -33,23 +35,21 @@ export default () => (
     <br/>
     <CardDeck>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={bet} />
         <Card.Body>
           <Card.Title>Social Bet</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.
+            The gentlemens agreement app.
           </Card.Text>
           <Button>View Project</Button>
         </Card.Body>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={mixedBiz} />
         <Card.Body>
           <Card.Title>mixedBiz</Card.Title>
           <Card.Text>
-            This card has supporting text below as a natural lead-in to additional
-            content.{' '}
+            Realtime messaging. Step one of a project to streamline live music booking.
           </Card.Text>
           <Button>View Project</Button>
         </Card.Body>
