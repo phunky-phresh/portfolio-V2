@@ -2,37 +2,32 @@ import React from 'react';
 
 import { Row, Col, CardDeck, Card, Button, Container } from 'react-bootstrap';
 
+import bf from '../assets/images/board-files-img.png';
+import ttt from '../assets/images/tic-tac-toe.png';
+
 export default () => (
   <Container>
     <h1>Projects</h1>
     <CardDeck>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={ttt} />
         <Card.Body>
           <Card.Title>Tic Tac Toe</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.
+            The classic Tic Tac Toe, built with JS, jQuery and HTML5/CSS. Themed to the Super Mario Universe.
           </Card.Text>
           <Button>View Project</Button>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={bf} />
         <Card.Body>
-          <Card.Title>Board Reviews</Card.Title>
+          <Card.Title>Board Files</Card.Title>
           <Card.Text>
-            This card has supporting text below as a natural lead-in to additional
-            content.{' '}
+            A snowboard review platform. Sharing opinions and technology. Built with Ruby on Rails.
           </Card.Text>
           <Button>View Project</Button>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
       </Card>
     </CardDeck>
     <br/>
@@ -47,9 +42,6 @@ export default () => (
           </Card.Text>
           <Button>View Project</Button>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
       </Card>
       <Card>
         <Card.Img variant="top" src="holder.js/100px160" />
@@ -61,9 +53,6 @@ export default () => (
           </Card.Text>
           <Button>View Project</Button>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
       </Card>
     </CardDeck>
   </Container>

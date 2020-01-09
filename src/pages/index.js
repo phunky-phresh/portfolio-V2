@@ -3,10 +3,11 @@ import Header from '../components/header';
 import About from '../components/about';
 import Work from '../components/work';
 import Footer from '../components/footer';
+import { Helmet } from 'react-helmet';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import { Row, Col } from 'react-bootstrap';
-
+import favicon from '../assets/images/nc.png'
 import styled from '@emotion/styled';
 import { css, jsx } from '@emotion/core';
 
@@ -20,6 +21,10 @@ import { css, jsx } from '@emotion/core';
 
 export default () => (
   <div>
+  <Helmet>
+    <title>Nick Cooney</title>
+    <link rel="icon" href={favicon} />
+  </Helmet>
     <Section>
       <Header />
     </Section>
