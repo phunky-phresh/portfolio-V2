@@ -18,7 +18,7 @@ export default () => (
           <Card.Text>
             The classic Tic Tac Toe, built with JS, jQuery and HTML5/CSS. Themed to the Super Mario Universe.
           </Card.Text>
-          <Button>View Project</Button>
+          <Button href="https://github.com/phunky-phresh/project0-TicTacToe">View Project</Button>
         </Card.Body>
       </Card>
       <Card>
@@ -28,7 +28,7 @@ export default () => (
           <Card.Text>
             A snowboard review platform. Sharing opinions and technology. Built with Ruby on Rails.
           </Card.Text>
-          <Button>View Project</Button>
+          <Button href='https://github.com/phunky-phresh/project01'>View Project</Button>
         </Card.Body>
       </Card>
     </CardDeck>
@@ -51,7 +51,7 @@ export default () => (
           <Card.Text>
             Realtime messaging. Step one of a project to streamline live music booking.
           </Card.Text>
-          <Button>View Project</Button>
+          <Button href='https://github.com/phunky-phresh/musos'>View Project</Button>
         </Card.Body>
       </Card>
     </CardDeck>

@@ -64,7 +64,7 @@ export default () => (
     </Col>
     <Col>
     <Blurb>
-      <h3>Junior Software Engineer, ready to step into the industry.</h3  >
+      <h3>I'm a Graphic Designer turned Junior Software Engineer, based in Sydney.</h3>
     </Blurb>
     </Col>
 
