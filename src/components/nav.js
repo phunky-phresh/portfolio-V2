@@ -14,25 +14,26 @@ const Bar = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
+  color: #FF5037;
 `
 const Nav = styled.div`
   align-items: flex-end;
   margin-left: auto;
 `
-const Button = styled.button`
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
-  &:focus {
-    outline: none;
-  }
+const Button = styled.a`
+  color: #5d5d5d;
+  /* text-decoration: none; */
+  /* background-color: transparent; */
+  /* border: none; */
+  padding: 10px;
+  font-size: 1.5rem;
+
 `
 
 export default () => (
   <Bar>
     <h1>Nick Cooney</h1>
-    <Nav className='nav-style'>
+    <Nav>
       <Button onClick={() => scrollTo('#projects')}>Projects</Button>
       <Button onClick={() => scrollTo('#about')}>About</Button>
     </Nav>

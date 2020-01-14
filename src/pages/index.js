@@ -4,7 +4,6 @@ import About from '../components/about';
 import Work from '../components/work';
 import Footer from '../components/footer';
 
-import '../components/sidebar.css'
 
 import { Helmet } from 'react-helmet';
 import scrollTo from 'gatsby-plugin-smoothscroll';
@@ -20,6 +19,10 @@ import { css, jsx } from '@emotion/core';
   height: 100vh;
   width: 100vw;
   margin-top: 2rem;
+  color: #5d5d5d;
+  a {
+    color: #FF5037;
+  }
  `
  const Foot = styled.div`
   display: flex;
@@ -33,6 +36,10 @@ import { css, jsx } from '@emotion/core';
    /* height: 100vh; */
    width: 100vw;
    margin-top: 4rem;
+   color: #5d5d5d;
+   a {
+     color: #FF5037;
+   }
  `
 
 export default () => (
@@ -50,6 +57,6 @@ export default () => (
     <Section id="about">
       <About />
     </Section>
-  
+
   </div>
 )

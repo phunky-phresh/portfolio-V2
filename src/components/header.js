@@ -1,10 +1,10 @@
 import React from 'react';
 import { Col, Row, Container, Navbar, Image } from 'react-bootstrap';
 import Nav from './nav';
-import './sidebar.css';
 import styled from '@emotion/styled';
 import { css, jsx } from '@emotion/core';
 import headshot from '../assets/images/head.png';
+import cv from '../assets/images/CV.pdf';
 
 import { Animated } from 'react-animated-css';
 import scrollTo from 'gatsby-plugin-smoothscroll';
@@ -39,16 +39,20 @@ const Button = styled.button`
     outline: none;
   }
 `
-const Email = styled.button`
+const Email = styled.a`
   font-size: 1.5rem;
-  background-color: orange;
+  /* background-color: #FF5037; */
   border: none;
+  color: white;
+  margin-right: 10px;
+  display: block;
   &:focus {
     outline: none;
   }
   &:hover {
-    transform: scale(1.1);
-    transition: 100ms;
+    /* transform: scale(1.1);
+    transition: 100ms; */
+    color: #5d5d5d;
   }
 `
 export default () => (
@@ -62,9 +66,9 @@ export default () => (
         </Col>
         <Col>
         <Blurb>
-          <h3>I'm a Graphic Designer turned Junior Software Engineer, based in Sydney.</h3>
+          <h2>Hi there! My name is Nick and I'm a Graphic Designer turned Junior Software Engineer, based in Sydney.</h2>
         </Blurb>
-          <Email href="mailto:nick.cooney94@gmail.com">Reach Out!</Email>
+          <Email href={cv}>Resume</Email>
         </Col>
       </Row>
     </Hero>
