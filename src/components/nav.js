@@ -20,14 +20,20 @@ const Nav = styled.div`
   align-items: flex-end;
   margin-left: auto;
 `
-const Button = styled.a`
+const Button = styled.button`
   color: #5d5d5d;
-  /* text-decoration: none; */
-  /* background-color: transparent; */
-  /* border: none; */
+  text-decoration: none;
+  background-color: transparent;
+   border: none;
   padding: 10px;
   font-size: 1.5rem;
-
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    text-decoration: underline;
+    color: #FF5037;
+  }
 `
 
 export default () => (
