@@ -2,8 +2,11 @@ import React from 'react';
 import Header from '../components/header';
 import About from '../components/about';
 import Work from '../components/work';
-import { Helmet } from 'react-helmet';
+import Footer from '../components/footer';
 
+import '../components/sidebar.css'
+
+import { Helmet } from 'react-helmet';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Row, Col } from 'react-bootstrap';
@@ -16,7 +19,13 @@ import { css, jsx } from '@emotion/core';
   flex-wrap: wrap;
   height: 100vh;
   width: 100vw;
-  margin-top: 4rem;
+  margin-top: 2rem;
+ `
+ const Foot = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: 2rem;
  `
  const Projects = styled.div`
    display: flex;
@@ -29,7 +38,7 @@ import { css, jsx } from '@emotion/core';
 export default () => (
   <div>
   <Helmet>
-    <title>Nick Cooney</title>
+    <title>Nick Cooney|Software Engineer</title>
     <link rel="icon" href={favicon} />
   </Helmet>
     <Section>
@@ -41,5 +50,6 @@ export default () => (
     <Section id="about">
       <About />
     </Section>
+  
   </div>
 )

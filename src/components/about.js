@@ -29,7 +29,7 @@ export default () => (
       </Col>
     </Row>
     <hr/>
-    <h1>Skills</h1>
+    
     <Row>
     <Col md={4}>
       <h4>Skills I know</h4>
