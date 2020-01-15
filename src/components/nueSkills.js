@@ -8,9 +8,9 @@ const Grid = styled.div`
 
 `
 const Icon = styled.div`
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  width: 80px;
+  height: 80px;
+  margin: 30px;
 `
 // const Img = styled.img`
 // height: 100px;
