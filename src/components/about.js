@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import SkillList from './skills';
 import Nue from './nueSkills';
 
-import {Link} from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const AboutLinks = styled.a`
@@ -29,7 +28,7 @@ export default () => (
       </Col>
     </Row>
     <hr/>
-    
+
     <Row>
     <Col md={4}>
       <h4>Skills I know</h4>

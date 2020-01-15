@@ -1,8 +1,6 @@
 import React from 'react';
 
-import {Link} from 'gatsby';
 import styled from '@emotion/styled';
-import { css, jsx } from '@emotion/core';
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
 

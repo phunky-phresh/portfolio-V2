@@ -12,10 +12,10 @@ const Icon = styled.div`
   height: 100px;
   margin: 10px;
 `
-const Img = styled.img`
-height: 100px;
-margin: 10px;
-`
+// const Img = styled.img`
+// height: 100px;
+// margin: 10px;
+// `
 
 export default () => (
   <Grid>

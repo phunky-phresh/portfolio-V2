@@ -1,9 +1,7 @@
 import React from 'react';
 
-import { Row, Col, CardDeck, Card, Button, Container } from 'react-bootstrap';
-import { Link } from 'gatsby';
+import { CardDeck, Card, Container } from 'react-bootstrap';
 import styled from '@emotion/styled';
-import { css, jsx } from '@emotion/core';
 
 import bf from '../assets/images/board-files-img.png';
 import ttt from '../assets/images/tic-tac-toe.png';
